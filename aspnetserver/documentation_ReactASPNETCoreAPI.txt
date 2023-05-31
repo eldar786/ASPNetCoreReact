@@ -1,0 +1,14 @@
+Resource info: https://www.youtube.com/watch?v=I9QUsAhbKhg
+Publish server to Azure app service:
+-Need free MS Azure account with pay-as-you-go subscription
+-In VS go to project - publish - Azure- Azure App Service
+When deploy is done, then you will get link site to access your server (that is running) on MS Azure Cloud.
+
+Copy site url and add in react app where is the BASE_URL
+
+React publishing(via Azure Portal):
+-In portal.azure.com click on create resource and search for Static Web App, where you can post your static web app built with front End framework like React, Angular, Blazor, Vue...
+-In field Source add-select github account, but we have to create repository first to add our project it can be together Reactapp and serverAPI
+-In field app location add React app Project (/reactclient)
+- Click Review + create and it is created deployed 
+- In Build and Deploy there is a link of the site (when it's published we can change CORS policy with the new link of the site).
